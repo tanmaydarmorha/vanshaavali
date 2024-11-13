@@ -2,16 +2,15 @@ Here’s a README template for your project:
 
 ---
 
-# Family Tree Graph Database with Neo4j
+# Vanshaavali Graph Database with Neo4j
 
-This project sets up a graph database using Neo4j to represent a family tree. It allows for easy exploration and analysis of complex family relationships using a graph structure. This approach leverages Neo4j's graph capabilities, making it efficient to query relationships, such as ancestry and familial connections across generations.
+This project sets up a graph database using Neo4j to represent a vanshaavali. It allows for easy exploration and analysis of complex family relationships using a graph structure. This approach leverages Neo4j's graph capabilities, making it efficient to query relationships, such as ancestry and familial connections across generations.
 
 ## Technologies Used
 
 - **Neo4j**: A leading graph database designed for connected data, which provides optimal storage and querying capabilities for graph structures.
 - **Docker**: Simplifies setting up Neo4j in a containerized environment, ensuring consistency across different development environments.
-- **APOC Library**: A powerful plugin for Neo4j that adds advanced graph algorithms, data import/export tools, and utilities.
-- **JavaScript Graph Visualization Library** (planned): For rendering family tree data in a user-friendly UI, making the complex relationships in the database more accessible.
+- **APOC Library**: A powerful plugin for Neo4j that adds advanced graph algorithms, data import/export tools, and utilities.database more accessible.
 
 ## Project Structure
 
@@ -20,7 +19,7 @@ This project sets up a graph database using Neo4j to represent a family tree. It
 ├── neo4j_exports/            # Exported files (cypher scripts) will be accessible here
 ├── docker-compose.yml        # Docker Compose file to set up the Neo4j server
 ├── README.md                 # Project documentation
-└── seed.cypher               # Cypher script for seeding initial data
+└── seed-data.cypher               # Cypher script for seeding initial data
 ```
 
 ## Setup Instructions
@@ -65,11 +64,11 @@ The Neo4j instance is configured to include the APOC plugin for exporting and im
 
 You can load initial data from `seed.cypher` using the Neo4j Browser or the `cypher-shell`:
 
-1. **Neo4j Browser**: Copy and paste the contents of `seed.cypher` and run it in the query panel.
+1. **Neo4j Browser**: Copy and paste the contents of `seed-data.cypher` and run it in the query panel.
    
 2. **Cypher Shell**:
    ```bash
-   cypher-shell -u neo4j -p password -f seed.cypher
+   cypher-shell -u neo4j -p password -f seed-data.cypher
    ```
 
 ### 5. Exporting and Importing Data (optional)
@@ -84,7 +83,7 @@ The exported file will be located in the `neo4j_exports` directory.
 
 ## Future Plans
 
-1. **User Interface**: Add a UI to visualize family tree data using a JavaScript graph visualization library.
+1. **User Interface**: Add a UI to visualize vanshaavali data using a JavaScript graph visualization library.
 2. **API Integration**: Develop APIs to interact with the Neo4j database, making it easy to update and retrieve family data programmatically.
 
 ## Contributing
